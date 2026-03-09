@@ -1,0 +1,42 @@
+@media print {
+  .site-header,
+  .form-page-header,
+  .no-print,
+  .btn,
+  .toast {
+    display: none !important;
+  }
+
+  .print-header {
+    display: flex !important;
+  }
+
+  body {
+    background: #fff !important;
+    font-size: 11pt;
+  }
+
+  .form-section {
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .form-section__header {
+    background: #f0f0f0 !important;
+  }
+
+  .section--b2b.b2b-hidden-for-print {
+    display: none !important;
+  }
+
+  @page {
+    size: a4 portrait;
+    margin: 15mm 15mm 15mm 15mm;
+  }
+}
+
+.print-header {
+  display: none;
+}
